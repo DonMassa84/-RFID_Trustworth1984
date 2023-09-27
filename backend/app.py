@@ -25,5 +25,23 @@ def get_last_locations():
         """).fetchall()
     return jsonify(result)
 
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    data = request.json
+    name = data['name']
+    chip_id = data['chip_id']
+    add_new_user(name, chip_id)
+    return jsonify({"message": "User added successfully"})
+
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({"error": "Not Found"}), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    return jsonify({"error": "Internal Server Error"}), 500
+
+
+
 # ... (Rest des Codes aus /backend/app.py)
 
