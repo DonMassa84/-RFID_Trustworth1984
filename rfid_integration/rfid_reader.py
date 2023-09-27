@@ -9,4 +9,7 @@ def get_chip_location():
     locations = ["Eingang", "Ausgang", "Bahnhof", "Bahnsteig"]
     return random.choice(locations)
 
+def read_chip():
+    # Hier sollten Sie den Code zum Lesen von echten RFID-Chips hinzufügen
+    pass
 
