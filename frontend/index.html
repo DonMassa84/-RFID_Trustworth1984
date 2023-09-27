@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RFID Trustworth1984 System</title>
+</head>
+<body>
+    <h1>RFID Trustworth1984 System</h1>
+
+    <h2>Register User</h2>
+    <form action="/register" method="post">
+        Chip ID: <input type="text" name="chip_id"><br>
+        Name: <input type="text" name="name"><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Log Scan</h2>
+    <form action="/log_scan" method="post">
+        Chip ID: <input type="text" name="chip_id"><br>
+        Location: <input type="text" name="location"><br>
+        <input type="submit" value="Log Scan">
+    </form>
+</body>
+</html>
