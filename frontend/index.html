@@ -1,23 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>RFID Trustworth1984 System</title>
-</head>
-<body>
-    <h1>RFID Trustworth1984 System</h1>
+<!-- ... (Vorheriger Code aus /frontend/index.html) -->
 
-    <h2>Register User</h2>
-    <form action="/register" method="post">
-        Chip ID: <input type="text" name="chip_id"><br>
-        Name: <input type="text" name="name"><br>
-        <input type="submit" value="Register">
-    </form>
+<h2>Registrierte Benutzer</h2>
+<table id="usersTable">
+    <thead>
+        <tr>
+            <th>Chip ID</th>
+            <th>Name</th>
+            <th>Letzter bekannter Standort</th>
+            <th>Zeitstempel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Die Daten werden dynamisch von der API geladen und hier eingefügt -->
+    </tbody>
+</table>
 
-    <h2>Log Scan</h2>
-    <form action="/log_scan" method="post">
-        Chip ID: <input type="text" name="chip_id"><br>
-        Location: <input type="text" name="location"><br>
-        <input type="submit" value="Log Scan">
-    </form>
-</body>
-</html>
+<h2>Scan-Logs</h2>
+<table id="logsTable">
+    <thead>
+        <tr>
+            <th>Chip ID</th>
+            <th>Standort</th>
+            <th>Zeitstempel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Die Daten werden dynamisch von der API geladen und hier eingefügt -->
+    </tbody>
+</table>
+
+<script>
+    // Daten von den registrierten Benutzern abrufen
+    fetch('/get_users')
+    .then(response => response.json())
+    .then(data => {
+        const table = document.getElementById('usersTable').getElementsByTagName('tbody')[0];
+        data.forEach(user => {
+            const row = table.insertRow();
+            row.insertCell(0).innerHTML = user.chip_id;
+            row.insertCell(1).innerHTML = user.name;
+        });
+    });
+
+    // Daten von den Scan-Logs abrufen
+    fetch('/get_logs')
+    .then(response => response.json())
+    .then(data => {
+        const table = document.getElementById('logsTable').getElementsByTagName('tbody')[0];
+        data.forEach(log => {
+            const row = table.insertRow();
+            row.insertCell(0).innerHTML = log.chip_id;
+            row.insertCell(1).innerHTML = log.location;
+            row.insertCell(2).innerHTML = log.timestamp;
+        });
+    });
+</script>
+
