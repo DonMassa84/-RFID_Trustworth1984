@@ -1,0 +1,52 @@
+Use Case: Universelles Zugangskontrollsystem mit RFID-Armband
+
+Beschreibung:
+Ein universelles Zugangskontrollsystem, basierend auf RFID-Technologie, ermöglicht die sichere und effiziente Verwaltung des Zugangs zu verschiedenen Orten, Veranstaltungen und Bereichen. Das System kann sowohl als physisches Armband als auch als mobile App verfügbar sein und bietet Benutzern die Flexibilität, ihre Zugangsberechtigungen bequem zu verwalten.
+
+Akteure:
+- Benutzer: Personen, die das universelle Zugangskontrollsystem verwenden, entweder über ein RFID-Armband oder eine mobile App.
+- Veranstaltungsorganisatoren: Personen oder Organisationen, die Veranstaltungen oder Orte verwalten und Zugangsberechtigungen steuern.
+
+Vorbedingungen:
+- Das universelle Zugangskontrollsystem ist installiert und einsatzbereit.
+- Benutzer haben ein RFID-Armband oder die mobile App auf ihren Geräten installiert.
+
+Hauptablauf:
+
+1. Registrierung und Erstellung eines Kontos:
+   - Der Benutzer registriert sich im System und erstellt ein Konto.
+   - Bei Bedarf erhält der Benutzer ein RFID-Armband oder lädt die mobile App herunter.
+
+2. Hinzufügen von Zugangsberechtigungen:
+   - Der Benutzer kann Zugangsberechtigungen hinzufügen, indem er RFID-Codes von berechtigten Anbietern scannt oder manuell eingibt.
+   - Diese Zugangsberechtigungen können für verschiedene Zwecke verwendet werden, z. B. für den öffentlichen Verkehr, Konzerte, Firmengelände usw.
+
+3. Automatische Löschung und Verfallszeit:
+   - Das System verwaltet die Zugangsberechtigungen und löscht automatisch abgelaufene Codes oder solche, die nach ihrer Verwendung nicht mehr benötigt werden.
+
+4. Nutzung des Zugangskontrollsystems:
+   - Der Benutzer verwendet sein RFID-Armband oder die mobile App, um Zugang zu einem bestimmten Ort oder einer Veranstaltung zu erhalten.
+   - Das System überprüft die Zugangsberechtigung und gewährt Zutritt, wenn die Berechtigung vorhanden ist.
+
+5. Verwaltung von Zugangsberechtigungen durch Veranstaltungsorganisatoren:
+   - Veranstaltungsorganisatoren können das System verwenden, um den Zugang zu ihren Veranstaltungen oder Standorten zu steuern.
+   - Sie können spezifische Zugangsberechtigungen für verschiedene Benutzergruppen festlegen.
+
+Alternative Flüsse:
+
+- Verlust des RFID-Armbands oder des Smartphones:
+  - Der Benutzer meldet den Verlust sofort und das System sperrt das verlorene Armband oder den verlorenen Zugang zur mobilen App.
+
+- Änderung der Zugangsberechtigungen:
+  - Benutzer können ihre Zugangsberechtigungen jederzeit ändern oder löschen.
+
+Nachbedingungen:
+- Der Benutzer hat erfolgreich auf verschiedene Orte und Veranstaltungen zugegriffen und seine Zugangsberechtigungen verwaltet.
+
+Erfolgsszenario:
+Ein Benutzer kann bequem und sicher auf verschiedene Orte und Veranstaltungen zugreifen, ohne physische Tickets oder Karten verwenden zu müssen. Veranstaltungsorganisatoren können den Zugang zu ihren Veranstaltungen und Bereichen effizient verwalten.
+
+Fehlerfall:
+Im Falle eines technischen Ausfalls oder eines Problems mit dem System kann der Zugang vorübergehend eingeschränkt sein, bis das Problem behoben ist.
+
+Dieser Use Case beschreibt die grundlegende Funktionalität eines universellen Zugangskontrollsystems mit RFID-Technologie. Es kann je nach spezifischen Anforderungen und Implementierungsdetails weiter angepasst werden.
