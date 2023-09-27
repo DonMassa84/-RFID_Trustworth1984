@@ -1,0 +1,27 @@
+das ist der Use Case: 
+
+"Reisen in einer großen Gruppe von Menschen möchte ich wissen, wer alles dabei ist. Ich gebe jedem im Voraus einen RFID-Chip als Schlüssel. Ich habe das richtige Lesegerät, und wenn jeder an mir vorbeigeht, halte ich das Lesegerät bereit. Es macht 'Klick, Klick', und die Software überprüft sozusagen, wer da ist, wer da ist und wer nicht da ist. Und vor allem interessiert mich: Wer ist nicht da.
+
+Das ist viel wichtiger.
+
+Also mache ich einen Spaziergang mit den Leuten. Sie steigen alle in den Zug ein und steigen am Bahnhof wieder aus. Ich muss zählen: 1, 2, 3, 4, 5. Da sind einige andere Passanten dazwischen, und bei 100 Personen habe ich mich bereits verzählt. Dann kann es schnell passieren, dass ich nicht sicher bin, wie viele Leute ich habe. Ich weiß also wirklich nie, wer wirklich da ist.
+
+Noch einmal, jeder bekommt einen Chip, vielleicht einmal und muss ihn behalten.
+
+Dann sage ich, ich starte eine Veranstaltung, und dann sage ich zur Sicherheit: 'Leute, geht raus, Klick, Klick'.
+
+Der Chip wird vor den Leser gehalten, ich kenne die Chipnummer, und ich habe die Chipnummer, d.h. Tabelle 1. Chipnummer = Name. Dann wird der Name übersetzt, d.h. an der Sicherheit entsteht eine Liste: Person 1, Person 2, Person 3, Person 4.
+
+Dann gehe ich die Treppe hoch in Richtung Zug, ich möchte wissen, wer noch da ist. Dann habe ich eine Art Check-Version, jeder hält dort seinen Chip hoch, und dann bestätigt die Software ihre Anwesenheit: 'Ist da, ist da, ist da', und dann fehlen mir zwei Leute, nämlich Donald Duck und Dagobert Duck.
+
+Dann sage ich: 'Dagobert hat vergessen, seinen Chip hochzuhalten', und dann sagt Daisy, sie hat keine Lust mehr und möchte nach Hause. Dann melde ich Daisy ab, indem ich ihren Chip hochhalte, sie will nicht mehr.
+
+Dann sage ich zu den anderen: 'Alle, haltet euren Chip hoch, Klick, Klick, Klick'.
+
+Ok, sie sind alle noch da.
+
+Dann speichere ich, wann ich die Leute gesehen habe und wo. Hier waren sie, dort waren sie.
+
+Dann bemerke ich, dass eine Person fehlt, Mist, und ich weiß nur, wo ich sie zuletzt gesehen habe und wo nicht.
+
+Alles sollte webbasiert sein, den Chip leicht lesen können und Schritt 1 den Chip mit der Tabelle verknüpfen, Schritt 2 immer die Chips überprüfen, ob sie noch da sind, und vor allem, wer nicht da ist."
