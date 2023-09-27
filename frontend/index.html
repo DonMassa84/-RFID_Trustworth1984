@@ -56,3 +56,29 @@
     });
 </script>
 
+<h2>Neuen Benutzer hinzufügen</h2>
+<form id="addUserForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="chip_id">Chip ID:</label>
+    <input type="text" id="chip_id" name="chip_id" required>
+    <input type="submit" value="Hinzufügen">
+</form>
+
+document.getElementById('addUserForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const chip_id = document.getElementById('chip_id').value;
+    fetch('/add_user', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name: name, chip_id: chip_id})
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+    });
+});
+
