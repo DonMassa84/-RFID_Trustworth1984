@@ -42,3 +42,19 @@ Weiterentwicklung
     Integrieren Sie echte RFID-Lesegeräte anstelle der aktuellen Mock-Implementierung.
     Fügen Sie Benutzerauthentifizierung und -autorisierung hinzu, um die Sicherheit zu erhöhen.
     Erweitern Sie die Frontend-Anwendung, um zusätzliche Funktionen und eine bessere Benutzererfahrung zu bieten.
+
+    +---------------------+----------------+
+|      Artikel        | Einkaufspreis  |
++---------------------+----------------+
+| RFID-Lesegerät      | 120,00 €       |
+| RFID-Tags (10 Stk.) | 15,00 €        |
+| Arduino Board       | 25,00 €        |
+| Verbindungskabel    | 5,00 €         |
+| Antenne             | 30,00 €        |
+| Netzteil            | 10,00 €        |
+| Gehäuse             | 20,00 €        |
+| Montagematerial     | 8,00 €         |
++---------------------+----------------+
+| Gesamt:             | 233,00 €       |
++---------------------+----------------+
+
